@@ -1,16 +1,13 @@
-# fluttercalender
+# flutter_calender_application
 
-A new Flutter project.
+A small flutter application to record future events and notify me so I don't forget.
 
-## Getting Started
+## Feature
 
-This project is a starting point for a Flutter application.
+## Library using
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* intl: ^0.20.1 - Used for date and time formatting, time zone conversion and language processing.
+* table_calendar: ^3.1.2 - Used for display calender and event.
+* flutter_local_notifications: ^18.0.1: Used for push notification in local application.
+* isar: ^3.1.0: NoSQL database for save data local.
+* provider: ^6.1.2: Used for manage state in application.
