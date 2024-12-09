@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttercalender/base/controller/base_controller.dart';
 import 'package:fluttercalender/utils/assets_util.dart';
 import 'package:fluttercalender/views/home/home_view.dart';
+import 'package:fluttercalender/views/personal/personal_view.dart';
 import 'package:fluttercalender/widgets/iconWidget.dart';
 
 class NavbarController extends BaseController {
@@ -22,7 +23,7 @@ class NavbarController extends BaseController {
         return Homepage();
 
       default:
-        return Homepage();
+        return PersonalView();
     }
   }
 
@@ -30,14 +31,14 @@ class NavbarController extends BaseController {
     List<BottomNavigationBarItem> listItem = [
       BottomNavigationBarItem(
         icon: iconWidget(assetName: AssetsUtils.ic_home),
-        activeIcon: iconWidget(assetName: AssetsUtils.ic_person),
+        activeIcon: iconWidget(assetName: AssetsUtils.ic_home),
         label: "home",
       ),
 
       BottomNavigationBarItem(
         icon: iconWidget(assetName: AssetsUtils.ic_person),
         activeIcon: iconWidget(assetName: AssetsUtils.ic_person),
-        label: "home",
+        label: "person",
       ),
     ];
 

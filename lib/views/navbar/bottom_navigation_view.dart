@@ -24,6 +24,8 @@ class _BottomNavigationViewState extends State<BottomNavigationView> {
             currentIndex: model.pageSelected,
             onTap: model.selectPage,
             items: model.listBottomNavBar(),
+            selectedItemColor: Colors.red,
+            selectedLabelStyle: TextStyle(color: Colors.red),
           ),
         ));
       },
